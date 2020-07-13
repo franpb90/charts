@@ -1094,3 +1094,16 @@ buildPlane:
         ##
         accessKey: ""
         secretKey: ""
+      k8s:
+        enabled: false
+        ## Replace the dummy values with the real ones
+        accountId: testaccountid
+        nodePoolName: customer-dynamic-nodepool
+        nodelimit: "5"
+        cpu: "1"
+        memory: "1000"
+        namespace: dummy
+        storageClass: dummy
+        labels: "{key:value}"
+        ##
+        kubeconfig: ""
