@@ -67,7 +67,7 @@ networkpolicy:
   #   ingress:
   #   - from:
   #     - podSelector:
-  #         matchLabels:
+  #         maLabels:tch
   #           app: mission-control
 
 ## Service Account
@@ -238,6 +238,7 @@ missionControl:
   appName: jfmc-server
   home: /var/opt/jfrog/mc
 
+  labels: {}
   # env:
 
   # Set this to true if you want to override credentials in mission-control.properties on startup
